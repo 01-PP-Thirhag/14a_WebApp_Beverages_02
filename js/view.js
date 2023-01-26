@@ -23,12 +23,12 @@ function actOnClick() {
         controller(); // nur dann, wenn Input gültig!
     }
     else{
-        ausgabe("input nicht korrekt!");
+        output("input nicht korrekt!");
     }
 }
 
 //Funktionalität: Check auf Datenkonsistenz  --> Test:
-//ausgabe(isInputValid());
+//output(isInputValid());
 function isInputValid() { // Frage: Is input valid?
     let inputStr = gui.dom.field.value; // verweis auf obj
     let patt = /^[0-9]{1,3}$/g;  //max 3 Ziffern zugelassen
@@ -47,7 +47,7 @@ function getInput() {
 }
 
 //Modul: Bilder austauschen --> Test:
-//ausgabe(updateImg(["milch","saft"]));
+//output(updateImg(["milch","saft"]));
 function updateImg(imgArr) {
 
     // Wrapper-DIV
@@ -83,8 +83,8 @@ function updateTxt(strArr) {
 }
 
 
-//Modul: Konsolenausgabe --> Test:
-//ausgabe("test");
-function ausgabe(inputStr) {
+//Modul: Konsolenoutput --> Test:
+//output("test");
+function output(inputStr) {
     console.log(inputStr);
 }

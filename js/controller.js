@@ -15,13 +15,13 @@ function controller() {
     let isTxtupdated = updateTxt(bevObj.bevArr);
 
     // monitoring
-    ausgabe("Getränke: " + bevObj.bevArr); // Alters-Check
-    ausgabe(isImgLoaded); // Img
-    ausgabe(isTxtupdated);
+    output("Getränke: " + bevObj.bevArr); // Alters-Check
+    output(isImgLoaded); // Img
+    output(isTxtupdated);
 }
 
 //Funktionalität: Business-Logic --> Test:
-//ausgabe(checkAge(32));
+//output(checkAge(32));
 function checkAge(age) {
     switch (true) {
         case age >= data.milk.lower && age <= data.milk.upper:
